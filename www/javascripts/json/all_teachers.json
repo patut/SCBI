@@ -1,0 +1,100 @@
+[
+  {
+    "idTeacher": 1,
+    "name": "Боброва Дарья",
+    "photo": "./teachers/bobr.jpg",
+    "subject": "Матан", 
+    "schedule":[
+    {"day":1416209400410, "begin":"10:30", "end": "11:50", "room": 534, "rep":1},
+    {"day":1416214200410, "begin":"12:10", "end": "13:30", "room": 534, "rep":1},
+    {"day":1416295800410, "begin":"12:10", "end": "15:00", "room": 606, "rep":0}
+    ]
+
+  },
+    {
+    "idTeacher": 2,
+    "name": "Майборода Кирилл",
+    "photo": "./teachers/mayb.jpg",
+    "subject": "Программирование 1", 
+    
+    "schedule":[
+    {"day":1416209400410, "begin":"10:30", "end": "11:50", "room": 534, "rep":1},
+    {"day":1416214200410, "begin":"12:10", "end": "13:30", "room": 534, "rep":1},
+    {"day":1416295800410, "begin":"12:10", "end": "15:00", "room": 606, "rep":0}
+    ]
+
+  },
+    {
+    "idTeacher": 3,
+    "name": "Королев Даниил",
+    "photo": "./teachers/korolev.jpg",
+    "subject": "Программирование 2", 
+    
+     "schedule":[
+    {"day":1416382200410, "begin":"10:30", "end": "11:50", "room": 534, "rep":1},
+    {"day":1416468600410, "begin":"12:10", "end": "13:30", "room": 534, "rep":1},
+    {"day":1416468600410, "begin":"15:00", "end": "15:00", "room": 302, "rep":0}
+    ]
+  },
+    {
+    "idTeacher": 4,
+    "name": "Филатов Сергей",
+    "photo": "./teachers/fil.jpg",
+    "subject": "Линейная алгебра", 
+    
+ "schedule":[
+    {"day":1416209400410, "begin":"10:30", "end": "11:50", "room": 534, "rep":1},
+    {"day":1416468600410, "begin":"12:10", "end": "13:30", "room": 534, "rep":1},
+    {"day":1416468600410, "begin":"12:10", "end": "15:00", "room": 534, "rep":0}
+    ]
+  },
+  {
+    "idTeacher": 5,
+    "name": "Боброва Дарья",
+    "photo": "./teachers/bobr.jpg",
+    "subject": "Матан", 
+    "schedule":[
+    {"day":1416209400410, "begin":"10:30", "end": "11:50", "room": 534, "rep":1},
+    {"day":1416214200410, "begin":"12:10", "end": "13:30", "room": 534, "rep":1},
+    {"day":1416295800410, "begin":"12:10", "end": "15:00", "room": 606, "rep":0}
+    ]
+
+  },
+    {
+    "idTeacher": 6,
+    "name": "Майборода Кирилл",
+    "photo": "./teachers/mayb.jpg",
+    "subject": "Программирование 1", 
+    
+    "schedule":[
+    {"day":1416209400410, "begin":"10:30", "end": "11:50", "room": 534, "rep":1},
+    {"day":1416214200410, "begin":"12:10", "end": "13:30", "room": 534, "rep":1},
+    {"day":1416295800410, "begin":"12:10", "end": "15:00", "room": 606, "rep":0}
+    ]
+
+  },
+    {
+    "idTeacher": 7,
+    "name": "Королев Даниил",
+    "photo": "./teachers/korolev.jpg",
+    "subject": "Программирование 2", 
+    
+     "schedule":[
+    {"day":1416382200410, "begin":"10:30", "end": "11:50", "room": 534, "rep":1},
+    {"day":1416468600410, "begin":"12:10", "end": "13:30", "room": 534, "rep":1},
+    {"day":1416468600410, "begin":"15:00", "end": "15:00", "room": 302, "rep":0}
+    ]
+  },
+    {
+    "idTeacher": 8,
+    "name": "Филатов Сергей",
+    "photo": "./teachers/fil.jpg",
+    "subject": "Линейная алгебра", 
+    
+ "schedule":[
+    {"day":1416209400410, "begin":"10:30", "end": "11:50", "room": 534, "rep":1},
+    {"day":1416468600410, "begin":"12:10", "end": "13:30", "room": 534, "rep":1},
+    {"day":1416468600410, "begin":"12:10", "end": "15:00", "room": 534, "rep":0}
+    ]
+  }
+]

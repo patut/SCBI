@@ -1,0 +1,11 @@
+ 
+<a href="/teachers" class="back">Назад</a>
+ <div class="teacherinfo">
+ 
+        <p>{{t.name}}</p><br>
+        <p>{{t.subject}}</p>
+    
+        <img ng-src="{{t.photo}}"><br>
+        <button class="btn">ПОДПИСАТЬСЯ</button><br>
+        <timetable-teacher ng-repeat="schedule in t.schedule"></timetable-teacher>
+</div>

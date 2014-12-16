@@ -1,0 +1,55 @@
+/**
+  *  PLEASE NOTE: Native UI CSS styling is still in beta and we are still
+  *               changing it around and creating the possibility to apply
+  *               different styles to Android and iOS.
+  *
+  *               Please follow https://github.com/AppGyver/steroids/issues/558
+  **/
+
+
+
+/* --- Tab Bar --- */
+
+tab-bar {
+  background-color: #000000;
+  border-top: 1px #D8D8D8 solid;
+}
+
+tab-bar tab-bar-item {
+  color: #FFFFFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 10px;
+}
+
+tab-bar tab-bar-item:selected {
+  color: #FFFFFF;
+  background-color: #22C064; /* Android only */
+}
+
+/* Vertical separator between tab items (Android Only) */
+tab-bar divider {
+  background-color: #D8D8D8;
+}
+
+/* Tab Bar top marker (Android Only) */
+tab-bar tab-bar-item marker-top:selected {
+  background-color: #1596f7;
+}
+
+
+
+/* --- Navigation Bar --- */
+
+navigation-bar {
+  background-color: #000000;
+}
+
+navigation-bar title {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+navigation-bar back-bar-button {
+  color: #ffffff;
+  font-size: 16px;
+}

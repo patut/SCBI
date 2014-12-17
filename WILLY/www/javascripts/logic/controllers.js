@@ -1,4 +1,4 @@
-(function(){
+ (function(){
   /*
   function ViewTeachers(){
   var MoveNext = new steroids.Animation({
@@ -11,15 +11,18 @@ steroids.layers.push({view: myView, animation: MoveNext}
   );
 steroids.tabBar.selectTab(1);
 };*/
-  var app=angular.module('SCBI.controllers', ['firebase']);
+  var app=angular.module('SCBI.controllers', []);
   app.controller('AuthorizationController', function($scope, $location){
 
   $scope.Authorize=function(){
     $location.path('teachers');
   };
   });
-app.controller('TeachersListController', ['$scope', '$routeParams', function($scope, $routeParams)
+app.controller('TeachersListController', ['$scope', '$routeParams', '$location', function($scope, $routeParams, $location)
 {
+
+
+
 $scope.t=$scope.teachers[$routeParams.id];
  }])
   .directive('timetableTeacher', function(){
@@ -33,11 +36,15 @@ $scope.t=$scope.teachers[$routeParams.id];
 
 
 
-  app.controller("TeachersController", ['$scope', '$firebase', function($scope, $firebase)
+  app.controller("TeachersController", ['$scope', '$http', function($scope, $http)
     { 
- 
-       var ref = new Firebase('https://blinding-heat-1969.firebaseio.com/');
-  $scope.teachers = $firebase(ref).$asArray();
+
+
+   $http.get('javascripts/json/all_teachers.json').success(function(data){
+    $scope.teachers=data;
+   });
+  //      var ref = new Firebase('https://blinding-heat-1969.firebaseio.com/');
+  // $scope.teachers = $firebase(ref).$asArray();
  
 /*
             $scope. ViewTeacher = function(){

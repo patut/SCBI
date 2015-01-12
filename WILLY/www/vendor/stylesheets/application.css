@@ -1,0 +1,235 @@
+
+
+
+.content_custum{
+	font-family: 'Open Sans Condensed', sans-serif;
+	
+}
+.current{
+	background-color: "##22C064";
+}
+
+/*Navigation bar*//*
+#navbar{
+	background-color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+}*/
+
+/* Вступительное окно */
+/* This parent can be any width and height */
+.btn {
+  background: #35b86c;
+  background-image: -webkit-linear-gradient(top, #35b86c, #35b86c);
+  background-image: -moz-linear-gradient(top, #35b86c, #35b86c);
+  background-image: -ms-linear-gradient(top, #35b86c, #35b86c);
+  background-image: -o-linear-gradient(top, #35b86c, #35b86c);
+  background-image: linear-gradient(to bottom, #35b86c, #35b86c);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 200%;
+  color: #ffffff;
+  padding: 15px 40px 15px 40px;
+  text-decoration: none;
+}
+
+
+
+
+#authorize{
+	overflow-y: hidden; 
+}
+#mail{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 100%;
+	margin-bottom: 2%;
+	border: 1px solid blue;
+}
+#mail.ng-invalid.ng-dirty{
+	border-color: red;
+}
+#mail.ng-valid.ng-dirty{
+	border-color: green;
+}
+
+.authorization {
+  text-align: center;
+margin-bottom:10px;
+position:absolute;
+top:0;
+bottom:0;
+right:0;
+left:0;
+}
+ 
+/* The ghost, nudged to maintain perfect centering */
+.authorization:before {
+content: '';
+display: inline-block;
+height: 100%;
+vertical-align: middle;
+margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can
+   also be of any width and height */ 
+.centered {
+  display: inline-block;
+vertical-align: middle;
+width: 300px;
+}
+
+/*Смена цветов для окна ввода почты*/
+html, body {
+	/* Background color set as workaround for Legacy Android issue:
+	https://github.com/AppGyver/steroids/issues/381 */
+	background-color:#fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	overflow-x: hidden;
+
+}
+h1,h2,h3{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+.grid{
+width: 100%;
+clear: both;
+display: inline-block;
+margin: 0;
+
+}
+
+
+.content{
+	margin: 0%;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.grid img{
+	margin: 0;
+	width: 33%;
+	float: left; 
+    
+}
+.grid h3{
+
+	font-size: 130%;
+	text-align: center;
+	margin: 0;
+	padding-top: 10%;
+
+	
+}
+.grid p{
+	
+	font-size: 75%;
+	margin: 0;
+	text-align: center;
+}
+
+.divider{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+/*Расписание общее*/
+
+
+.week{
+	text-align: right;
+}
+.day{
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: 150%;
+	
+}
+.day:first-letter{
+	text-transform: uppercase;
+}
+.lesson{
+	width: 100%;
+	margin: 3% 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	vertical-align: middle;
+	font-size: 90%;
+	
+}
+
+.subject{
+	text-align: center;
+	float: left;
+	width:35%;
+}
+
+.teacher{
+	text-align: center;
+	float: left;
+	width: 30%;
+}
+.classroom
+{
+	text-align: center;
+	width: 10%;
+	float: left;
+	
+}
+.time{
+	width:25%;
+	text-align: center;
+	float: left;
+}
+.divider{
+	text-align: center;
+}
+.block{
+	margin: 3% 0;
+}
+
+
+
+/*Учитель (отдельно)*/
+.teacherinfo{
+	text-align: center;
+	margin-top: 3%;
+}
+.teacherinfo p{
+	font-size: 300%;
+}
+.teacherinfo img{
+	margin: 1%;
+	width: 80%;
+}
+.back{
+	font-size: 150%;
+	padding-top: 2%;
+	padding-left: 2%;
+}
+/*Расписание для отдельного учителя*/
+.lessonsep{
+	width: 100%;
+	margin: 3% 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	vertical-align: middle;
+}
+
+.classroomsep{
+	text-align: center;
+	float: left;
+	width:50%;
+	}
+
+.timesep{
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+

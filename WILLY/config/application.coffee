@@ -18,6 +18,14 @@ steroids.config.tabBar.tabs = [
      title: "Расписание"
      icon: "icons/timetable.png"
      location: "http://localhost/timetable.html"
+   },
+   {
+     title: "Добавление"
+     location: "http://localhost/add.html"
+   },
+   {
+     title: "Обновления"
+     location: "http://localhost/chat.html"
    }
  ]
 

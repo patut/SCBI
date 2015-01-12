@@ -1,0 +1,9 @@
+{
+  "firebase": "scbi",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

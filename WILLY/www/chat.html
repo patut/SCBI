@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='SCBI'>
+  <head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width">
+    <title>Authorization</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="/vendor/ionic/css/ionic.css" />
+    <link rel="stylesheet" href="vendor/stylesheets/application.css" />
+
+    <script src="/javascripts/onerror.js"></script>
+    <script src="/javascripts/console.log.js"></script>
+    <script src="http://localhost/cordova.js"></script>
+    <script src="/components/steroids-js/steroids.js"></script> 
+
+
+    <script src="javascripts/libraries/jquery-2.1.1.min.js"></script>
+    <script src="javascripts/libraries/jquery_mobile.js"></script>
+
+
+    <script type="text/javascript" src="javascripts/libraries/angular.js"></script>
+    <script src='javascripts/libraries/firebase.js'></script>
+    <script src='javascripts/libraries/angularfire.min.js'></script>
+
+    <script type="text/javascript" src="javascripts/libraries/angular-route.js"></script>
+    <script type="text/javascript" src="javascripts/libraries/angular-locale_ru.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+    <script src='https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js'></script>
+
+
+    <script type="text/javascript" src="javascripts/logic/controllers.js"></script>
+    <script type="text/javascript" src="javascripts/logic/app.js"></script>
+    <script type="text/javascript" src="javascripts/logic/services.js"></script>
+
+
+
+    <script src="/javascripts/application.js"></script>
+
+  </head>
+  <body class="content" id="authorize">
+<div ng-controller="TeachersController">
+  <div ng-controller="ChatController">
+    <h1>Новости и обновления</h1>
+        <div class='example-chat-toolbar'>
+          <label for='nameInput'>Username:</label>
+          <input ng-model='name' type='text' id='nameInput' placeholder='enter a username...'>
+      </div>
+
+        <div>
+        <input ng-model='msg' ng-keydown="addMessage($event)" type='text' id='messageInput'  placeholder='Type a message...'>
+      </div>
+          <ul>
+      <li ng-repeat="msg in messages">
+        <strong>{{msg.from}}: </strong>
+    {{msg.body}}
+      </li>
+    </ul>
+  </div>
+</div>
+     
+
+  </body>
+</html>

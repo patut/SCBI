@@ -1,0 +1,88 @@
+<html ng-app="SCBI">
+  <head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width">
+    <title>Расписание</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="/vendor/ionic/css/ionic.css" />
+    <link rel="stylesheet" href="vendor/stylesheets/application.css" />
+
+    <script src="/javascripts/onerror.js"></script>
+    <script src="/javascripts/console.log.js"></script>
+    <script src="http://localhost/cordova.js"></script>
+    <script src="/components/steroids-js/steroids.js"></script> 
+
+
+    <script src="javascripts/libraries/jquery-2.1.1.min.js"></script>
+    <script src="javascripts/libraries/jquery_mobile.js"></script>
+
+
+    <script type="text/javascript" src="javascripts/libraries/angular.js"></script>
+    <script src='javascripts/libraries/firebase.js'></script>
+    <script src='javascripts/libraries/angularfire.min.js'></script>
+
+    <script type="text/javascript" src="javascripts/libraries/angular-route.js"></script>
+    <script type="text/javascript" src="javascripts/libraries/angular-locale_ru.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+    <script src='https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js'></script>
+
+
+    <script type="text/javascript" src="javascripts/logic/controllers.js"></script>
+    <script type="text/javascript" src="javascripts/logic/app.js"></script>
+    <script type="text/javascript" src="javascripts/logic/services.js"></script>
+
+
+
+    <script src="/javascripts/application.js"></script>
+  
+  </head>
+  <body class="content">
+    <div ng-controller="AddController">
+      
+    <h1>Добавление преподавателя</h1>
+<form name="forma" novalidate>
+
+    <input type='text' ng-model='name' placeholder="ФИ" class="split" required>
+    <input type='text' ng-model='subject' placeholder="Предмет" class="split" required>
+    <input type='email' ng-model='email' placeholder="Электронная почта" class="split" required>
+    <input type="submit" class="split" ng-click="forma.$valid && addTeacher()">
+ 
+</form>
+
+
+
+    <h3>Расписание</h3>
+
+
+
+<div>
+
+ <form id="formtimet">
+<table class="table">
+<td>
+    <input type='text' ng-model='id' placeholder="Айди учителя"  class="split" required><br>
+
+  <p>Начало занятий</p>
+    <input type='time' ng-model='begin' class="split" required><br>
+  <p>Дата занятия</p>
+    <input type='date' ng-model='day'  class="split" required><br>
+  <p>Конец занятий</p>
+    <input type='time' ng-model='end' class="split" required><br>
+
+  </td>
+
+  <td>
+    <p  class="split">Повторяются ли?</p>
+    <input type='radio' ng-model='rep' value="true" class="split">true<br>
+    <input type='radio' ng-model='rep' value="false" class="split">false<br>
+  
+    <input type='text' ng-model='room' placeholder="Аудитория"  class="split" required><br>
+<input type="submit" class="split" ng-click="addLesson(id, begin, day, end, room, rep)">
+</td>
+    
+</table>
+</form>
+</div>
+    </div>
+  </body>
+</html>

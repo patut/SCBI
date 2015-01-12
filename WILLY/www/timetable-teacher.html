@@ -1,0 +1,8 @@
+      <h1 class="day">{{s[0].day | date:"EEEE"}}</h1>
+      <div class="lessonsep" ng-repeat="attr in s[1].schedules">
+        <div class="classroomsep">{{attr.room}}</div>
+        <div class="timesep">{{attr.begin | date: 'shortTime'}} - {{attr.end | date: 'shortTime'}}</div>
+      </div>
+      <div class="divider">
+        <img src="views/divider.png" >
+      </div>
